@@ -1,3 +1,148 @@
-PODFILE CHECKSUM: d4a415fb80b3bd7b523cb09dc1e0d8b6f9b9060a
+PODS:
+  - Alamofire (5.9.1)
+  - AppAuth (1.7.5):
+    - AppAuth/Core (= 1.7.5)
+    - AppAuth/ExternalUserAgent (= 1.7.5)
+  - AppAuth/Core (1.7.5)
+  - AppAuth/ExternalUserAgent (1.7.5):
+    - AppAuth/Core
+  - Cosmos (23.0.0)
+  - DropDown (2.3.13)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FSPagerView (0.8.3)
+  - GoogleMaps (9.0.0):
+    - GoogleMaps/Maps (= 9.0.0)
+  - GoogleMaps/Base (9.0.0)
+  - GoogleMaps/Maps (9.0.0):
+    - GoogleMaps/Base
+  - GoogleSignIn (7.1.0):
+    - AppAuth (< 2.0, >= 1.7.3)
+    - GTMAppAuth (< 5.0, >= 4.1.1)
+    - GTMSessionFetcher/Core (~> 3.3)
+  - GTMAppAuth (4.1.1):
+    - AppAuth/Core (~> 1.7)
+    - GTMSessionFetcher/Core (< 4.0, >= 3.3)
+  - GTMSessionFetcher/Core (3.4.1)
+  - IQKeyboardManagerSwift (6.5.1)
+  - KeychainSwift (20.0.0)
+  - LanguageManager-iOS (1.2.7)
+  - libxlsxwriter (1.1.7)
+  - lottie-ios (4.4.3)
+  - Mantis (2.14.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PromisesObjC (2.4.0)
+  - PromisesSwift (2.4.0):
+    - PromisesObjC (= 2.4.0)
+  - Resolver (1.5.1)
+  - SwiftEntryKit (2.0.0)
+  - ViewAnimator (3.1.0)
+  - Wormholy (1.7.0)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - DropDown
+  - FacebookCore
+  - FBSDKLoginKit
+  - FSPagerView
+  - GoogleMaps
+  - GoogleSignIn
+  - IQKeyboardManagerSwift (= 6.5.1)
+  - KeychainSwift (~> 20.0)
+  - LanguageManager-iOS
+  - libxlsxwriter
+  - lottie-ios
+  - Mantis (~> 2.14.1)
+  - Moya (~> 15.0)
+  - NVActivityIndicatorView (from `https://github.com/ninjaprox/NVActivityIndicatorView.git`, tag `4.8.0`)
+  - PromisesSwift
+  - Resolver
+  - SwiftEntryKit
+  - ViewAnimator
+  - Wormholy
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppAuth
+    - Cosmos
+    - DropDown
+    - FacebookCore
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FSPagerView
+    - GoogleMaps
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - LanguageManager-iOS
+    - libxlsxwriter
+    - lottie-ios
+    - Mantis
+    - Moya
+    - PromisesObjC
+    - PromisesSwift
+    - Resolver
+    - SwiftEntryKit
+    - ViewAnimator
+    - Wormholy
+
+EXTERNAL SOURCES:
+  NVActivityIndicatorView:
+    :git: https://github.com/ninjaprox/NVActivityIndicatorView.git
+    :tag: 4.8.0
+
+CHECKOUT OPTIONS:
+  NVActivityIndicatorView:
+    :git: https://github.com/ninjaprox/NVActivityIndicatorView.git
+    :tag: 4.8.0
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleMaps: 4907d0d42bf8cd58f56743e31f91d23c10682745
+  GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
+  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
+  GTMSessionFetcher: 8000756fc1c19d2e5697b90311f7832d2e33f6cd
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  LanguageManager-iOS: 6b2dbb3793445827114708f0759b76e96932d7c8
+  libxlsxwriter: e83575045c1888806f49a181cad1384f2e4198d3
+  lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
+  Mantis: b91a7fb2b16c180c77a76bc83bb126abba105cd5
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NVActivityIndicatorView: 24b713d5140767dc43097cd9d5ff719ff0660bdc
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
+  Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
+
+PODFILE CHECKSUM: ee0d78cfc014af39471bbbf38a3f291ee018022f
 
 COCOAPODS: 1.15.2

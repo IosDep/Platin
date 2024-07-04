@@ -5,17 +5,41 @@
 //  Created by Reham Khalil on 04/07/2024.
 
 import UIKit
+import LanguageManager_iOS
+import FacebookCore
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    @Injected var preferencesManager: PreferencesManager
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        LanguageManager.shared.defaultLanguage = .en
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        goToSplash(windowScene: windowScene)
+//        if self.preferencesManager.isEnterOnBordingScreenForFirstTime == true{
+//            print("hlkewmflewmi")
+            routUserToHomePage()
+//
+//        }else {
+//            goToSplash(windowScene: windowScene)
+//           print("hi")
+//        }
+    }
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let url = URLContexts.first?.url else {
+            return
+        }
+
+        ApplicationDelegate.shared.application(
+            UIApplication.shared,
+            open: url,
+            sourceApplication: nil,
+            annotation: [UIApplication.OpenURLOptionsKey.annotation]
+        )
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -44,11 +68,49 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
+}
+
+
+extension SceneDelegate {
+//    func goToSplash(windowScene: UIWindowScene) {
+//        let navigationController = NavigationController(rootViewController: OnBoardingOneViewController())
+////        navigationController.navigationBar.isHidden = true
+//        let window = UIWindow(windowScene: windowScene)
+//        window.rootViewController = navigationController
+//        self.window = window
+//        window.makeKeyAndVisible()
+//    }
+
+    func routUserToHomePage() {
+        let tabBarController = TabBarController.loadFromNib()
+           let navCtrl = NavigationController(rootViewController: tabBarController)
+
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        guard let window = windowScene?.windows.first,
+               let rootViewController = window.rootViewController
+
+           else {
+               return
+           }
+
+           navCtrl.view.frame = rootViewController.view.frame
+           navCtrl.view.layoutIfNeeded()
+
+           UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+               window.rootViewController = navCtrl
+           })
+    }
+
+//    func goToSplash(windowScene: UIWindowScene) {
+//        let navigationController = NavigationController(rootViewController: SplashViewController())
+//        navigationController.navigationBar.isHidden = true
+//        let window = UIWindow(windowScene: windowScene)
+//        window.rootViewController = navigationController
+//        self.window = window
+//        window.makeKeyAndVisible()
+//    }
 
 
 }
-
