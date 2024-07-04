@@ -14,9 +14,12 @@
 		BEC6E27F2C367AB200F57EBC /* Platin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E27D2C367AB200F57EBC /* Platin.xcdatamodeld */; };
 		BEC6E2812C367AB300F57EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC6E2802C367AB300F57EBC /* Assets.xcassets */; };
 		BEC6E2842C367AB300F57EBC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEC6E2832C367AB300F57EBC /* Base */; };
+		BF3E2A4F847DC86C4C88CDCA /* Pods_Platin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Platin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7793A775FCDC411B49048B35 /* Pods-Platin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platin.release.xcconfig"; path = "Target Support Files/Pods-Platin/Pods-Platin.release.xcconfig"; sourceTree = "<group>"; };
 		BEC6E2712C367AB200F57EBC /* Platin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC6E2742C367AB200F57EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC6E2762C367AB200F57EBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		BEC6E2802C367AB300F57EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC6E2832C367AB300F57EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC6E2852C367AB300F57EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C5A3678DE1A986754BF1B2 /* Pods-Platin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platin.debug.xcconfig"; path = "Target Support Files/Pods-Platin/Pods-Platin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3E2A4F847DC86C4C88CDCA /* Pods_Platin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378DF6AC884BFB0771481BAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEC6E2682C367AB200F57EBC = {
 			isa = PBXGroup;
 			children = (
 				BEC6E2732C367AB200F57EBC /* Platin */,
 				BEC6E2722C367AB200F57EBC /* Products */,
+				D07B073829390F0F2BB69457 /* Pods */,
+				378DF6AC884BFB0771481BAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = Platin;
 			sourceTree = "<group>";
 		};
+		D07B073829390F0F2BB69457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5A3678DE1A986754BF1B2 /* Pods-Platin.debug.xcconfig */,
+				7793A775FCDC411B49048B35 /* Pods-Platin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEC6E2882C367AB300F57EBC /* Build configuration list for PBXNativeTarget "Platin" */;
 			buildPhases = (
+				40D23606C5B3BB571902E5FB /* [CP] Check Pods Manifest.lock */,
 				BEC6E26D2C367AB200F57EBC /* Sources */,
 				BEC6E26E2C367AB200F57EBC /* Frameworks */,
 				BEC6E26F2C367AB200F57EBC /* Resources */,
@@ -135,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40D23606C5B3BB571902E5FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Platin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEC6E26D2C367AB200F57EBC /* Sources */ = {
@@ -291,6 +342,7 @@
 		};
 		BEC6E2892C367AB300F57EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C5A3678DE1A986754BF1B2 /* Pods-Platin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +371,7 @@
 		};
 		BEC6E28A2C367AB300F57EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7793A775FCDC411B49048B35 /* Pods-Platin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
