@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1532492C3BCAE600B99E97 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1532472C3BCAE600B99E97 /* HomeCollectionViewCell.swift */; };
+		BE15324A2C3BCAE600B99E97 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1532482C3BCAE600B99E97 /* HomeCollectionViewCell.xib */; };
 		BEC6E2752C367AB200F57EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E2742C367AB200F57EBC /* AppDelegate.swift */; };
 		BEC6E2772C367AB200F57EBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E2762C367AB200F57EBC /* SceneDelegate.swift */; };
 		BEC6E2792C367AB200F57EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E2782C367AB200F57EBC /* ViewController.swift */; };
@@ -99,12 +101,16 @@
 		BEC6E3442C368C3500F57EBC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC6E3432C368C3500F57EBC /* Colors.xcassets */; };
 		BEC6E3462C36B2E700F57EBC /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E3452C36B2E700F57EBC /* PrimaryTextField.swift */; };
 		BEC6E3492C36B4CE00F57EBC /* ISRAR-SYRIA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = BEC6E3482C36B4CA00F57EBC /* ISRAR-SYRIA.TTF */; };
+		BEC6E34E2C36CA1A00F57EBC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC6E34D2C36CA1A00F57EBC /* HomeViewController.xib */; };
+		BEC6E34F2C36CA1A00F57EBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6E34C2C36CA1A00F57EBC /* HomeViewController.swift */; };
 		BF3E2A4F847DC86C4C88CDCA /* Pods_Platin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Platin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7793A775FCDC411B49048B35 /* Pods-Platin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platin.release.xcconfig"; path = "Target Support Files/Pods-Platin/Pods-Platin.release.xcconfig"; sourceTree = "<group>"; };
+		BE1532472C3BCAE600B99E97 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE1532482C3BCAE600B99E97 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEC6E2712C367AB200F57EBC /* Platin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC6E2742C367AB200F57EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC6E2762C367AB200F57EBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 		BEC6E3432C368C3500F57EBC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BEC6E3452C36B2E700F57EBC /* PrimaryTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimaryTextField.swift; path = Platin/PrimaryTextField.swift; sourceTree = SOURCE_ROOT; };
 		BEC6E3482C36B4CA00F57EBC /* ISRAR-SYRIA.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ISRAR-SYRIA.TTF"; sourceTree = "<group>"; };
+		BEC6E34C2C36CA1A00F57EBC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BEC6E34D2C36CA1A00F57EBC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		E2C5A3678DE1A986754BF1B2 /* Pods-Platin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platin.debug.xcconfig"; path = "Target Support Files/Pods-Platin/Pods-Platin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +228,15 @@
 				4EA1100FBAC94097DFD7AF72 /* Pods_Platin.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE1532432C3BCAB500B99E97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE1532472C3BCAE600B99E97 /* HomeCollectionViewCell.swift */,
+				BE1532482C3BCAE600B99E97 /* HomeCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BEC6E2682C367AB200F57EBC = {
@@ -247,6 +264,7 @@
 				BEC6E3362C368ACA00F57EBC /* AppDelegate+Service.swift */,
 				BEC6E2762C367AB200F57EBC /* SceneDelegate.swift */,
 				BEC6E2E82C36891600F57EBC /* AppSetup */,
+				BEC6E34A2C36C9FD00F57EBC /* ViewControllers */,
 				BEC6E2782C367AB200F57EBC /* ViewController.swift */,
 				BEC6E27A2C367AB200F57EBC /* Main.storyboard */,
 				BEC6E2802C367AB300F57EBC /* Assets.xcassets */,
@@ -508,6 +526,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		BEC6E34A2C36C9FD00F57EBC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEC6E34B2C36CA0A00F57EBC /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BEC6E34B2C36CA0A00F57EBC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BEC6E34C2C36CA1A00F57EBC /* HomeViewController.swift */,
+				BEC6E34D2C36CA1A00F57EBC /* HomeViewController.xib */,
+				BE1532432C3BCAB500B99E97 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D07B073829390F0F2BB69457 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +627,8 @@
 				BEC6E2842C367AB300F57EBC /* Base in Resources */,
 				BEC6E3212C36891700F57EBC /* Neo Sans Arabic Regular.ttf in Resources */,
 				BEC6E27C2C367AB200F57EBC /* Base in Resources */,
+				BE15324A2C3BCAE600B99E97 /* HomeCollectionViewCell.xib in Resources */,
+				BEC6E34E2C36CA1A00F57EBC /* HomeViewController.xib in Resources */,
 				BEC6E33D2C368BA000F57EBC /* TabBarController.xib in Resources */,
 				BEC6E3422C368BC300F57EBC /* TestViewController.xib in Resources */,
 				BEC6E3092C36891700F57EBC /* PopUpViewController.xib in Resources */,
@@ -668,6 +706,7 @@
 				BEC6E3132C36891700F57EBC /* DataSourceType.swift in Sources */,
 				BEC6E31E2C36891700F57EBC /* PreferenceKey.swift in Sources */,
 				BEC6E3202C36891700F57EBC /* CDFontProvider.swift in Sources */,
+				BE1532492C3BCAE600B99E97 /* HomeCollectionViewCell.swift in Sources */,
 				BEC6E2ED2C36891700F57EBC /* SectionBoundary+Title.swift in Sources */,
 				BEC6E2F52C36891700F57EBC /* Then.swift in Sources */,
 				BEC6E32D2C36891700F57EBC /* Helper.swift in Sources */,
@@ -703,6 +742,7 @@
 				BEC6E3112C36891700F57EBC /* ConstantDataSource.swift in Sources */,
 				BEC6E3312C36891700F57EBC /* UserTaskOperator.swift in Sources */,
 				BEC6E32F2C36891700F57EBC /* NotificationService.swift in Sources */,
+				BEC6E34F2C36CA1A00F57EBC /* HomeViewController.swift in Sources */,
 				BEC6E2F72C36891700F57EBC /* UIButton+EX.swift in Sources */,
 				BEC6E33E2C368BA000F57EBC /* TabBarItem.swift in Sources */,
 				BEC6E3462C36B2E700F57EBC /* PrimaryTextField.swift in Sources */,

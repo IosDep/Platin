@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="Platin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYv-yt-lk8">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="138"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="K0A-vV-dDj">
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="138"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6VS-No-dkC">
+                                <rect key="frame" x="15" y="72.333333333333329" width="163.33333333333334" height="50.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop by category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPh-CO-pm1">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.33333333333334" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Electrical Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgN-dJ-bNm">
+                                        <rect key="frame" x="0.0" y="30.333333333333343" width="163.33333333333334" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="Background"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K0A-vV-dDj" firstAttribute="top" secondItem="pYv-yt-lk8" secondAttribute="top" id="ABm-a6-csm"/>
+                            <constraint firstItem="K0A-vV-dDj" firstAttribute="leading" secondItem="pYv-yt-lk8" secondAttribute="leading" id="Oq1-h4-1fG"/>
+                            <constraint firstAttribute="bottom" secondItem="K0A-vV-dDj" secondAttribute="bottom" id="YI4-lJ-1T2"/>
+                            <constraint firstItem="6VS-No-dkC" firstAttribute="leading" secondItem="pYv-yt-lk8" secondAttribute="leading" constant="15" id="ec4-5V-xc2"/>
+                            <constraint firstAttribute="trailing" secondItem="K0A-vV-dDj" secondAttribute="trailing" id="g31-vh-Je0"/>
+                            <constraint firstAttribute="bottom" secondItem="6VS-No-dkC" secondAttribute="bottom" constant="15" id="m3K-r0-DpL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pYv-yt-lk8" secondAttribute="trailing" id="49m-Gw-eqg"/>
+                <constraint firstAttribute="bottom" secondItem="pYv-yt-lk8" secondAttribute="bottom" id="Lpz-Ox-4Kv"/>
+                <constraint firstItem="pYv-yt-lk8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TYG-hB-tt9"/>
+                <constraint firstItem="pYv-yt-lk8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gkL-VQ-T9y"/>
+            </constraints>
+            <size key="customSize" width="275" height="138"/>
+            <connections>
+                <outlet property="ImageView" destination="K0A-vV-dDj" id="9yz-ma-xxw"/>
+                <outlet property="titleLabel" destination="cgN-dJ-bNm" id="sy1-e3-Q0D"/>
+            </connections>
+            <point key="canvasLocation" x="168.70229007633588" y="50.70422535211268"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="testImage" width="339" height="143"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

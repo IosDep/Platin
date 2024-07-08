@@ -67,7 +67,7 @@ public class TabBarController: UITabBarController {
     }
 
     private func setViewControllers() {
-        let homeViewController = TestViewController.loadFromNib()
+        let homeViewController = HomeViewController.loadFromNib()
         homeViewController.tabBarItem = TabBarItem(title: "الرئيسية", image: UIImage(named: "home"), tag: 0, tintColor: #colorLiteral(red: 0.9803921569, green: 0.7725490196, blue: 0.4, alpha: 1))
         homeViewController.tabBarItem.selectedImage = UIImage(named: "home")
 
