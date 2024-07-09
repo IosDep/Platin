@@ -131,8 +131,7 @@ class BaseViewController: UIViewController {
     }
 
     @objc func additionalButtonAction() {
-        // Action for the additional button
-        let vc = TestViewController.loadFromNib()
+        let vc = SideMenuViewController.loadFromNib()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

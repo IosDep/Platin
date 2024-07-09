@@ -1,17 +1,16 @@
 //
-//  HomeViewController.swift
+//  CategoyDetailsViewController.swift
 //  Platin
 //
-//  Created by Reham Khalil on 04/07/2024.
+//  Created by Reham Khalil on 09/07/2024.
 //
 
 import UIKit
 import ViewAnimator
 
-class HomeViewController: BaseViewController {
-    override var navigationHidingMode: BaseViewController.BarHidingMode{.alwaysHidden}
+class CategoyDetailsViewController: BaseViewController {
+    override var navigationHidingMode: BaseViewController.BarHidingMode{.alwaysVisible}
     
-    @IBOutlet weak var menuButton: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -22,15 +21,7 @@ class HomeViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.hiddenNavigation(isHidden: true)
-    }
-    
-    override func connectActions() {
-        menuButton.UIViewAction {
-            [weak self] in
-            let vc = SideMenuViewController.loadFromNib()
-            self?.navigationController?.pushViewController(vc, animated: true)
-        }
+        self.hiddenNavigation(isHidden: false)
     }
     
     private func setupCollectionView(){
@@ -44,23 +35,32 @@ class HomeViewController: BaseViewController {
     private func fadeInCells() {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.collectionView.reloadData()
+            
             self.collectionView?.performBatchUpdates({
-                let animations = [AnimationType.vector((CGVector(dx: 0, dy: 150)))]
+                let animations = [AnimationType.from(direction: .top, offset: 150.0)]
                 UIView.animate(views: self.collectionView.visibleCells(in: 0),
                                animations: animations,
-                               duration: 4.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.allowUserInteraction])
-            })
+                               duration: 4.0,
+                               usingSpringWithDamping: 0.4,
+                               initialSpringVelocity: 0,
+                               options: [.allowUserInteraction])
+            }, completion: nil)
         }
+    }
+
+    
+    override func connectActions() {
+        
     }
     
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension CategoyDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: HomeCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.UIViewAction {
             [weak self] in
-            let vc = CategoyDetailsViewController.loadFromNib()
+            let vc = SubCategoryDetailsViewController.loadFromNib()
             self?.navigationController?.pushViewController(vc, animated: true)
         }
         return cell

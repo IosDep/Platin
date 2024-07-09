@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController" customModule="Platin" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutCompany" destination="Y7B-mP-vV9" id="PFa-pp-gVw"/>
+                <outlet property="backButtonImage" destination="0BB-HT-nfE" id="gCM-YC-mvk"/>
+                <outlet property="certificates" destination="tuH-b8-KhA" id="JN0-ZE-R3L"/>
+                <outlet property="mediaCenter" destination="ASQ-oi-hui" id="8cU-EV-yUk"/>
+                <outlet property="ourCompanies" destination="92R-1a-Gdy" id="uX6-Xl-K9z"/>
+                <outlet property="trademarks" destination="y67-gq-dgc" id="W3o-Nb-aEM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu-BG" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-yG-x9d">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ILr-Uv-OeS">
+                    <rect key="frame" x="71.666666666666686" y="226" width="250" height="400"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x-mark-sidemenu" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-HT-nfE">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="7o8-s8-Csq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7B-mP-vV9">
+                            <rect key="frame" x="0.0" y="70" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="U4t-fr-hEj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Media Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASQ-oi-hui">
+                            <rect key="frame" x="0.0" y="140" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="xpO-oW-jjk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-b8-KhA">
+                            <rect key="frame" x="0.0" y="210" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="RNP-eP-7ac"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trademarks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y67-gq-dgc">
+                            <rect key="frame" x="0.0" y="280" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="iEB-WL-ts2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our companies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92R-1a-Gdy">
+                            <rect key="frame" x="0.0" y="350" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="djZ-Ip-YTT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="TCf-G9-teP"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ILr-Uv-OeS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0uf-Mq-ylY"/>
+                <constraint firstItem="k3P-yG-x9d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7h0-B9-WTP"/>
+                <constraint firstItem="k3P-yG-x9d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CaI-Pt-6hD"/>
+                <constraint firstItem="k3P-yG-x9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rnU-bI-iOc"/>
+                <constraint firstItem="ILr-Uv-OeS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u5g-PN-7s7"/>
+                <constraint firstAttribute="bottom" secondItem="k3P-yG-x9d" secondAttribute="bottom" id="zt7-Nd-090"/>
+            </constraints>
+            <point key="canvasLocation" x="112.21374045801527" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sidemenu-BG" width="390" height="844"/>
+        <image name="x-mark-sidemenu" width="61" height="61"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

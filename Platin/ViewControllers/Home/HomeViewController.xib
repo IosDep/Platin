@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Platin" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="hYP-nn-yOA" id="3HG-vG-Q6M"/>
+                <outlet property="menuButton" destination="frI-Sg-PVy" id="VDc-Sn-4vy"/>
                 <outlet property="view" destination="kFF-8R-Ct3" id="BPp-3a-JUy"/>
             </connections>
         </placeholder>
@@ -25,7 +26,7 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-ZX-qjs">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="frI-Sg-PVy">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="frI-Sg-PVy">
                             <rect key="frame" x="328" y="50" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="bWU-fi-a68"/>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eDW-W8-Q5I" customClass="VideosMediaCenterCollectionViewCell" customModule="Platin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l34-Gc-erH">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="256"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OPg-Dx-vXe">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="256"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="MediaCenter-testVideo" translatesAutoresizingMaskIntoConstraints="NO" id="WKh-km-TEl">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="152"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Concluding a partnership agreement with Petzil Company" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wV-Xx-1PM">
+                                        <rect key="frame" x="0.0" y="152" width="218" height="104"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.30196078430000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OPg-Dx-vXe" firstAttribute="leading" secondItem="l34-Gc-erH" secondAttribute="leading" id="LQT-bb-V4d"/>
+                            <constraint firstAttribute="bottom" secondItem="OPg-Dx-vXe" secondAttribute="bottom" id="LZE-bI-pFd"/>
+                            <constraint firstAttribute="trailing" secondItem="OPg-Dx-vXe" secondAttribute="trailing" id="maj-dM-sVk"/>
+                            <constraint firstItem="OPg-Dx-vXe" firstAttribute="top" secondItem="l34-Gc-erH" secondAttribute="top" id="v3R-i3-MpO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                <color key="value" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="qH8-cg-iF0"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l34-Gc-erH" secondAttribute="trailing" id="6Gy-40-Ldr"/>
+                <constraint firstItem="l34-Gc-erH" firstAttribute="top" secondItem="eDW-W8-Q5I" secondAttribute="top" id="F8q-Bo-Y2t"/>
+                <constraint firstAttribute="bottom" secondItem="l34-Gc-erH" secondAttribute="bottom" id="HF2-fO-AZJ"/>
+                <constraint firstItem="l34-Gc-erH" firstAttribute="leading" secondItem="eDW-W8-Q5I" secondAttribute="leading" id="b2B-oa-PeW"/>
+            </constraints>
+            <size key="customSize" width="218" height="256"/>
+            <point key="canvasLocation" x="216.79389312977099" y="245.77464788732397"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MediaCenter-testVideo" width="325" height="152"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bahij_TheSansArabic-SemiBold.ttf">
+            <string>BahijTheSansArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HNi-3c-BTx" customClass="OurCompaniesCollectionViewCell" customModule="Platin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="364"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="364"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swa-Xe-ScK">
+                        <rect key="frame" x="0.0" y="0.0" width="254" height="364"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="لوجوهات الشركة (1)-01" translatesAutoresizingMaskIntoConstraints="NO" id="Vfn-8U-NvP">
+                                <rect key="frame" x="10" y="26" width="234" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EpO-8g-iJB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="D3L-fM-uYn">
+                                <rect key="frame" x="10" y="136" width="234" height="218"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بلاتين للطاقة المتجددة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te4-ya-VbE">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.0039215686274509803" green="0.30196078431372547" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2X-Lc-Mkq">
+                                        <rect key="frame" x="0.0" y="18.666666666666657" width="234" height="199.33333333333334"/>
+                                        <mutableString key="text">Platin Renewable Energy is one of the companies owned by Platin Investment Group, which is a company specialized in the field of studying, designing, implementing and finding solutions in the field of renewable energy in all its forms: solar energy, wind energy, and any energy source that maintains public health and does not cause environmental pollution.</mutableString>
+                                        <fontDescription key="fontDescription" name="BahijTheSansArabic-SemiBold" family="Bahij TheSansArabic" pointSize="15"/>
+                                        <color key="textColor" name="primaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D3L-fM-uYn" firstAttribute="top" secondItem="Vfn-8U-NvP" secondAttribute="bottom" constant="10" id="AQT-ph-Xvb"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfn-8U-NvP" secondAttribute="trailing" constant="10" id="VeF-f5-qMW"/>
+                            <constraint firstItem="Vfn-8U-NvP" firstAttribute="top" secondItem="Swa-Xe-ScK" secondAttribute="top" constant="26" id="XBF-AM-YUQ"/>
+                            <constraint firstAttribute="bottom" secondItem="D3L-fM-uYn" secondAttribute="bottom" constant="10" id="bWh-4N-o03"/>
+                            <constraint firstItem="D3L-fM-uYn" firstAttribute="leading" secondItem="Swa-Xe-ScK" secondAttribute="leading" constant="10" id="ekP-eG-xdr"/>
+                            <constraint firstAttribute="trailing" secondItem="D3L-fM-uYn" secondAttribute="trailing" constant="10" id="h4y-Z4-WhK"/>
+                            <constraint firstItem="Vfn-8U-NvP" firstAttribute="leading" secondItem="Swa-Xe-ScK" secondAttribute="leading" constant="10" id="lla-4V-LkO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                <color key="value" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="wD1-bE-sWS"/>
+            <constraints>
+                <constraint firstItem="Swa-Xe-ScK" firstAttribute="leading" secondItem="HNi-3c-BTx" secondAttribute="leading" id="17K-hN-Vx8"/>
+                <constraint firstItem="Swa-Xe-ScK" firstAttribute="top" secondItem="HNi-3c-BTx" secondAttribute="top" id="Fk0-nd-I6X"/>
+                <constraint firstAttribute="bottom" secondItem="Swa-Xe-ScK" secondAttribute="bottom" id="jMN-eu-zGh"/>
+                <constraint firstAttribute="trailing" secondItem="Swa-Xe-ScK" secondAttribute="trailing" id="lls-b9-IAE"/>
+            </constraints>
+            <size key="customSize" width="254" height="364"/>
+            <point key="canvasLocation" x="152.67175572519082" y="130.28169014084509"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="لوجوهات الشركة (1)-01" width="99" height="82"/>
+        <namedColor name="primaryColor">
+            <color red="0.10999999940395355" green="0.24699999392032623" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

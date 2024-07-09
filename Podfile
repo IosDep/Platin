@@ -29,5 +29,6 @@ target 'Platin' do
   pod 'FSPagerView'
   pod 'Mantis', '~> 2.14.1'
   pod 'Wormholy', :inhibit_warnings => true
+  pod 'RangeSeekSlider'
   
 end

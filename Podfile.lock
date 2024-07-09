@@ -50,6 +50,7 @@ PODS:
   - PromisesObjC (2.4.0)
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
+  - RangeSeekSlider (1.8.0)
   - Resolver (1.5.1)
   - SwiftEntryKit (2.0.0)
   - ViewAnimator (3.1.0)
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - Moya (~> 15.0)
   - NVActivityIndicatorView (from `https://github.com/ninjaprox/NVActivityIndicatorView.git`, tag `4.8.0`)
   - PromisesSwift
+  - RangeSeekSlider
   - Resolver
   - SwiftEntryKit
   - ViewAnimator
@@ -100,6 +102,7 @@ SPEC REPOS:
     - Moya
     - PromisesObjC
     - PromisesSwift
+    - RangeSeekSlider
     - Resolver
     - SwiftEntryKit
     - ViewAnimator
@@ -138,11 +141,12 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 24b713d5140767dc43097cd9d5ff719ff0660bdc
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
   Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
 
-PODFILE CHECKSUM: ee0d78cfc014af39471bbbf38a3f291ee018022f
+PODFILE CHECKSUM: 90bc1a4d82f4c612ebcec7d355fc280dc8507f83
 
 COCOAPODS: 1.15.2

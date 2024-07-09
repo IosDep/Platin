@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoyDetailsViewController" customModule="Platin" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="MCK-Iv-Sgh" id="IQ2-Fo-OsG"/>
+                <outlet property="view" destination="bsH-dg-VFk" id="ZFj-uE-LxO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bsH-dg-VFk">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-Qi-F0Y">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Category" translatesAutoresizingMaskIntoConstraints="NO" id="R9Z-An-YHx">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="R9Z-An-YHx" firstAttribute="leading" secondItem="EfF-Qi-F0Y" secondAttribute="leading" id="3Bn-Zy-FMs"/>
+                        <constraint firstItem="R9Z-An-YHx" firstAttribute="top" secondItem="EfF-Qi-F0Y" secondAttribute="top" id="6bM-6y-l31"/>
+                        <constraint firstAttribute="height" constant="150" id="NhJ-9P-G2Z"/>
+                        <constraint firstAttribute="trailing" secondItem="R9Z-An-YHx" secondAttribute="trailing" id="QGf-fB-ctx"/>
+                        <constraint firstAttribute="bottom" secondItem="R9Z-An-YHx" secondAttribute="bottom" id="ZVt-JM-4g4"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Iv-Sgh">
+                    <rect key="frame" x="20" y="221" width="353" height="597"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oDg-BT-uUJ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Electrical Tools" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33K-Lx-ZFC">
+                    <rect key="frame" x="25" y="180" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="MDY-WU-n6K"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MCK-Iv-Sgh" firstAttribute="top" secondItem="33K-Lx-ZFC" secondAttribute="bottom" constant="20" id="KyS-V9-oxx"/>
+                <constraint firstItem="MDY-WU-n6K" firstAttribute="trailing" secondItem="MCK-Iv-Sgh" secondAttribute="trailing" constant="20" id="P1b-Vh-quD"/>
+                <constraint firstItem="MDY-WU-n6K" firstAttribute="trailing" secondItem="33K-Lx-ZFC" secondAttribute="trailing" constant="25" id="RHh-GC-VPA"/>
+                <constraint firstItem="EfF-Qi-F0Y" firstAttribute="top" secondItem="bsH-dg-VFk" secondAttribute="top" id="WJu-H5-4dC"/>
+                <constraint firstItem="33K-Lx-ZFC" firstAttribute="top" secondItem="EfF-Qi-F0Y" secondAttribute="bottom" constant="30" id="XU6-Aa-Gpw"/>
+                <constraint firstItem="MDY-WU-n6K" firstAttribute="bottom" secondItem="MCK-Iv-Sgh" secondAttribute="bottom" id="aQt-F1-hAm"/>
+                <constraint firstAttribute="trailing" secondItem="EfF-Qi-F0Y" secondAttribute="trailing" id="awk-bD-wq0"/>
+                <constraint firstItem="33K-Lx-ZFC" firstAttribute="leading" secondItem="MDY-WU-n6K" secondAttribute="leading" constant="25" id="lQH-S4-6XQ"/>
+                <constraint firstItem="EfF-Qi-F0Y" firstAttribute="leading" secondItem="bsH-dg-VFk" secondAttribute="leading" id="pVM-TX-KeZ"/>
+                <constraint firstItem="MCK-Iv-Sgh" firstAttribute="leading" secondItem="MDY-WU-n6K" secondAttribute="leading" constant="20" id="wyc-6Q-ryc"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo-Category" width="390" height="132"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

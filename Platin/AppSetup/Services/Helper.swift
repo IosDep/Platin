@@ -29,7 +29,6 @@ class Helper {
             dropDown.cellNib = UINib(nibName: "dropDownTableCell", bundle: nil)
             dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
                 cell.textLabel?.textAlignment = .right
-//                cell.backgroundColor = .red
                 print("Item\(item)")
             }
         }
@@ -41,7 +40,7 @@ class Helper {
     class func customizeDropDown() {
         let appearance = DropDown.appearance()
         appearance.backgroundColor = .white
-        appearance.selectionBackgroundColor = #colorLiteral(red: 0.3647058824, green: 0.1870486438, blue: 0.6015628576, alpha: 0.5)
+        appearance.selectionBackgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 0.8)
         appearance.layer.cornerRadius = 20
         appearance.layer.masksToBounds = true
         appearance.layer.shadowColor = UIColor(white: 0.6, alpha: 1).cgColor

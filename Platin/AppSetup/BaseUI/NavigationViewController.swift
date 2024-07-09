@@ -50,7 +50,7 @@ class NavigationController: UINavigationController {
         super.pushViewController(viewController, animated: animated)
     }
 
-    func setAppearance(for titleColor: UIColor = .black) {
+    func setAppearance(for titleColor: UIColor = .white) {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.shadowImage = UIImage()
